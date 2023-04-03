@@ -5,60 +5,6 @@
 //   }
 html {
    font-size: 10px;
-   @media screen and (min-width: 667px) {
-      font-size: calc(6670px / var(--viewport-width));
-   }
-   @media screen and (min-width: 768px) {
-      font-size: calc(7680px / var(--viewport-width));
-   }
-   @media screen and (min-width: 992px) {
-      font-size: calc(9920px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1024px) {
-      font-size: 10px;
-   }
-   @media screen and (min-width: 1168px) {
-      font-size: calc(11680px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1280px) {
-      font-size: calc(12800px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1312px) {
-      font-size: calc(13120px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1366px) {
-      font-size: calc(13660px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1440px) {
-      font-size: calc(14400px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1496px) {
-      font-size: calc(14960px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1536px) {
-      font-size: calc(15360px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1600px) {
-      font-size: calc(16000px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1680px) {
-      font-size: calc(16800px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1700px) {
-      font-size: calc(17000px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1728px) {
-      font-size: calc(17280px / var(--viewport-width));
-   }
-   @media screen and (min-width: 1920px) {
-      font-size: calc(19200px / var(--viewport-width));
-   }
-   @media screen and (min-width: 2056px) {
-      font-size: calc(20560px / var(--viewport-width));
-   }
-   @media screen and (min-width: 2560px) {
-      font-size: calc(25600px / var(--viewport-width));
-   }
 }
 
 * {
