@@ -109,19 +109,8 @@
    }
    // .social-media__link
    &__link {
-      display: inline-block;
-      background: #30B85E;
-      border-radius: 6px;
-      padding: 14px 68px;
       &:not(:last-child) {
          margin-bottom: 64px;
-      }
-      & > * {
-         font-family: 'Museo Sans Cyrl';
-         font-weight: 600;
-         font-size: 16px;
-         line-height: 22px;
-         color: #FFFFFF;
       }
    }
    // .social-media__description
@@ -268,3 +257,142 @@
    }
 }
 /* ============================ feel END ================================================================= */
+/* ============================ what-you-get START ================================================================= */
+.what-you-get {
+   position: relative;
+   //.what-you-get__img
+   &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+   }
+   // .what-you-get__container
+   &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 100px 15px;
+      @media screen and (max-width: 666px) {
+         padding: 64px 15px;
+      }
+   }
+   // .what-you-get__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 60px;
+         @media screen and (max-width: 666px) {
+            margin-bottom: 50px;
+         }
+      }
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         text-transform: capitalize;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
+   }
+   // .what-you-get__list
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      counter-reset: myCounter;
+      &:not(:last-child) {
+         margin-bottom: 50px;
+      }
+
+      & > li {
+         position: relative;
+         display: flex;
+         font-size: 22px;
+         line-height: 30px;
+         color: #25293F;
+         padding-top: 40px;
+         flex: 1 1 calc(33.33% - 50px);
+         @media screen and (max-width: 768px) {
+            flex: 1 1 calc(50% - 50px);
+         }
+         @media screen and (max-width: 666px) {
+            flex: 1 1 calc(100% - 50px);
+         }
+
+         &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            display: inline-block;
+            text-align: center;
+            min-width: 38px;
+            height: 23px;
+            margin-right: 2px;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 25px;
+            border-radius: 33px;
+
+         }
+         &:nth-child(1) {
+            &:before {
+               background: #8BE7AA;
+            }
+         }
+         &:nth-child(2) {
+            &:before {
+               background: #8BDCE7;
+            }
+         }
+         &:nth-child(3) {
+            &:before {
+               background: #E78BDD;
+            }
+         }
+         &:nth-child(4) {
+            &:before {
+               background: #E5E78B;
+            }
+         }
+         &:nth-child(5) {
+            &:before {
+               background: #E78B8B;
+            }
+         }
+         &:nth-child(6) {
+            &:before {
+               background: #8BE7D1;
+            }
+         }
+      }
+   }
+   // .what-you-get__link
+   &__link {
+   }
+}
+.link {
+   display: inline-block;
+   background: #30B85E;
+   border-radius: 6px;
+   padding: 14px 68px;
+   & > * {
+      font-family: 'Museo Sans Cyrl';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
+   }
+}
+/* ============================ what-you-get END ================================================================= */
