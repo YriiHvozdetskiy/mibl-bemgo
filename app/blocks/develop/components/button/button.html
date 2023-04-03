@@ -1,0 +1,47 @@
+@@if(dataName == ""){
+	@@if(isButton != ""){
+		<button class="button @@mod" type="@@type"><span>@@title</span></button>
+	}
+	@@if(isButton == ""){
+		<a href="@@href" class="link @@mod">
+			@@if(img != ""){
+				<img src="@@img" alt="@@alt" class="button__icon">
+			}
+			@@if(svg != ""){
+				<svg class="@@class-svg">
+					<use xlink:href="#@@svg"></use>
+				</svg>
+			}
+			@@if(title != ""){
+				<span>@@title</span>
+			}
+		</a>
+	}
+}
+@@if(dataName != ""){
+	@@if(isButton != ""){
+		<button class="button @@mod"
+				  type="@@type"
+				  data-@@dataName="@@dataValue">
+			<span>@@title</span>
+		</button>
+	}
+	@@if(isButton == ""){
+		<a class="link @@mod"
+			href="@@href"
+			data-@@dataName="@@dataValue">
+			@@if(img != ""){
+				<img src="@@img" alt="@@alt" class="button__icon">
+			}
+			@@if(svg != ""){
+				<svg class="@@class-svg">
+					<use xlink:href="#@@svg"></use>
+				</svg>
+			}
+			@@if(title != ""){
+				<span>@@title</span>
+			}
+		</a>
+	}
+}
+

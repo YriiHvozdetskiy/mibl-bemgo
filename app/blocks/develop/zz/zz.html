@@ -1,0 +1,86 @@
+<!--щоб gulp бачив файл потрібно задати клас тикий як і в папки "zz"-->
+@@include( 'develop/sections/error/error.html')
+<div current-count="7" class="div"></div>
+<section class="zz hero">
+	<h2 class="hero__title">hero</h2>
+	<button type="button" data-fancybox data-src="#test"><strong>fancybox</strong></button>
+	<picture class="hero__picture">
+
+		<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+		<!--картинка в форматі .jpg видає помилку при [npm run do]  на Windows -- але вроді сторінка потом "працює" -->
+		<img src="@zz/item.jpg" alt="">
+		<!--картинка в форматі .jpg видає помилку при [npm run do]  на Windows -- але вроді сторінка потом "працює" -->
+
+		<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+      <!--всі картинки можна зберігати в [ОДНОМУ] місці path для цього-->
+      <img src="/static/app/img/item.jpg" alt="">
+
+	</picture>
+	<picture class="hero__img">
+		<!--<img src="@zz/blog-info-1.jpg" alt="">-->
+	</picture>
+	<div class="hero__img"></div>
+	<div class="hero__img-2"></div>
+	<!--	буде в dist/styles/img/sprite_zz_call.svg [npm run start]-->
+	<!--	буде в dist/styles/img/symbol.svg [npm run do]
+	в dist\zz.html -- в фінальній збірці через [npm run do] буде виличерзний спрайт з всіх сторінок
+	 -->
+	<svg class="hero__icon">
+		<use xlink:href="#zz__call"></use>
+	</svg>
+	<svg class="hero__icon">
+		<use xlink:href="#zz__logo"></use>
+	</svg>
+	<svg class="test__icon">
+		<use xlink:href="#zz__service-icon-1"></use>
+	</svg>
+	<svg>
+		<use xlink:href="#app__time"></use>
+	</svg>
+	<ul class="projects__list individual-projects">
+		@@for (var i = 0; i < global.jsons.index.items.length; i++) {
+		@@include( 'develop/zz/individual-projects__item.html', {
+		"title": "`+global.jsons.index.items[i].title+`",
+		"text": "`+global.jsons.index.items[i].text+`",
+		"link": "`+global.jsons.index.items[i].link+`",
+		"img": "`+global.jsons.index.items[i].img+`"
+		})
+		}
+	</ul>
+</section>
+<section class="zz test">
+	<h1 class="test__title">test</h1>
+
+	@@include( 'develop/components/select-dropdown/select-dropdown.html')
+
+
+	@@include( 'develop/components/button/button.html', {
+	"title": "вход в Личный кабинет",
+	"mod": "test__button",
+	"isButton": "button",
+	"href": "login.html",
+	"type": "button",
+	"img": "@zz/time.svg",
+	"alt": "",
+	"dataName":"",
+	"dataValue":""
+	})
+	@@include( 'develop/components/input/input.html', {
+	"type": "number",
+	"mod": "test__wrapper",
+	"isDate": "",
+	"isSelect": "",
+	"hasInformation": "",
+	"confirmNumber": "",
+	"confirmSMS": "",
+	"placeholder": "+3(9XX) XXX - XX - XX",
+	"name": "tel",
+	"label": "Номер мобильного"
+	})
+
+</section>
+
+@@include( 'develop/zz/service-hero/service-hero.html')
+@@include( 'develop/zz/service-quantum/service-quantum.html')

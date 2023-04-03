@@ -1,0 +1,17 @@
+@import '../app/placeholder.scss';
+//@import "../components/select-dropdown/select-dropdown.scss"; щоб були видні стилі
+
+/* ============================ hero START ================================================================= */
+.hero {
+	&__title {
+		color: #E28B00;
+	}
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+	font-size: 1rem;
+}
+
+/* ============================ hero END ================================================================= */
+
+

@@ -1,0 +1,145 @@
+@import '../app/placeholder.scss';
+@import '../app/mixin.scss';
+@import "service-hero/service-hero.scss";
+@import "service-quantum/service-quantum.scss";
+@import "../components/button/button.scss";
+// імпортуємо на потрібну сторінку
+@import "../components/input/input.scss";
+@import "../components/select-dropdown/select-dropdown.scss";
+
+@import "../sections/error/error.scss";
+//@import "../header/header.scss"; // дублював стилі на index.html
+//@import "../footer/footer.scss";
+
+/* ============================ zz START ================================================================= */
+.test {
+   &__title {
+      color: red;
+      @include wordSize(12, 2.3, 600)
+   }
+}
+
+.hero {
+   &__img {
+      width: 15rem;
+      height: 15rem;
+      // буде в dist/styles/img/sprite_zz_item_2.jpg якщо залишем [npm run start]
+      // не буде підключено якщо буде [npm run do]
+      background: url("img/sprite/item_2.jpg") no-repeat center;
+      background-size: cover; //розтягує картинку
+   }
+   &__img-2 {
+      width: 15rem;
+      height: 15rem;
+      background: url("img/sprite/rub.svg") no-repeat center;
+      background-size: cover;
+   }
+   &__picture {
+      // тег picture -- не стилізується
+      & > * {
+         max-width: 130rem;
+         width: 100%;
+         height: 30rem;
+         object-fit: cover;
+         object-position: center;
+      }
+   }
+   &__icon {
+      cursor: pointer;
+      fill: #ae276d;
+      &:hover,
+      &:focus {
+         fill: #8ab065;
+      }
+   }
+}
+
+//ховер працює тільки тоді коли hero__title знаходиться в блоку з класом .hero
+//погано підтримується
+:is(.hero) .hero__title:hover {
+   color: red;
+}
+
+.individual-projects {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   &__item {
+      flex: 0 1 45%;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      &:not(:last-child) {
+         margin-bottom: 6.8rem;
+      }
+   }
+   &__title {
+      margin-bottom: 2rem;
+      & > * {
+         font-weight: 600;
+         font-size: 1.8rem;
+         line-height: 2.8rem;
+      }
+   }
+   &__text {
+      margin-bottom: 2rem;
+      & > * {
+         font-size: 1.2rem;
+         line-height: 1.6rem;
+      }
+   }
+   &__link {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+      //ховер на текст силки
+      &:hover,
+      &:focus {
+         & > * {
+            color: #8ab065;
+         }
+      }
+      & > * {
+      }
+      //ховер на svg картинку
+      &:hover,
+      &:focus {
+         .individual-projects__icon {
+            stroke: #8ab065;
+         }
+      }
+   }
+   &__icon {
+      max-width: 1.6rem;
+      max-height: 1.6rem;
+      stroke: var(--accent-color);
+   }
+}
+
+.div {
+   position: relative;
+   &::after {
+      content: attr(current-count);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   }
+}
+
+// !!!!!!!!!!!!!!!!! при [npm run do] background - писати з файла який в "папці сторінки" !!!!!!!!!!!!!!!!
+
+//.dropdown{
+//	.active {
+//		&:after {
+//			background: url("img/sprite/arrow-down-active.svg") no-repeat center;
+//		}
+//	}
+//	&__button{
+//		&:after{
+//			background: url("img/sprite/arrow-down.svg") no-repeat center;
+//		}
+//	}
+//}
+/* ============================ zz END ================================================================= */

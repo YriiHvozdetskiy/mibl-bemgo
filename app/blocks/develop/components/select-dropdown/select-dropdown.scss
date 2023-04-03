@@ -1,0 +1,93 @@
+.dropdown {
+   position: relative;
+   .active {
+      color: var(--accent-color);
+      &:after {
+         background: url("app/blocks/develop/components/img/sprite/arrow-down-active.svg") no-repeat center;
+         background-size: cover;
+         pointer-events: none;
+      }
+   }
+   &__button {
+      position: relative;
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: var(--light-color);
+      border-radius: 0.6rem;
+      height: 4.6rem;
+      padding: 1rem 2rem 1rem 1.4rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.05em;
+      color: var(--primary-text-color);
+      cursor: pointer;
+      text-transform: uppercase;
+      //& > * {
+      //   pointer-events: none;
+      //}
+      &:hover,
+      &:focus {
+         outline: none;
+      }
+      &:after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         right: .5rem;
+         width: .9rem;
+         height: .7rem;
+         transform: translate(0, -50%,);
+         background: url("app/blocks/develop/components/img/sprite/arrow-down.svg") no-repeat center;
+         background-size: cover;
+         pointer-events: none;
+      }
+      &_active {
+         outline: none;
+         box-shadow: 0 0 0 0.4rem rgba(176, 198, 225, 0.6);
+      }
+   }
+   &__list {
+      display: none;
+      position: absolute;
+      left: -0.5rem;
+      top: 4.5rem;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      background: var(--light-color);
+      overflow: hidden;
+      border: .1rem solid #EEF0F2;
+      box-sizing: border-box;
+      border-radius: 1rem;
+      z-index: 1;
+      width: max-content;
+      &_visible {
+         display: block;
+      }
+   }
+   &__item {
+      margin: 0;
+      background: var(--light-color);
+      box-sizing: border-box;
+      border-bottom: 0;
+      padding: 1.4rem 2rem;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.05em;
+      color: var(--primary-text-color);
+      text-transform: uppercase;
+      transition: color .25s var(--time-distribution-function);
+      &.hidden {
+         display: none;
+      }
+
+      &:hover,
+      &:focus {
+         color: var(--accent-color);
+      }
+   }
+}

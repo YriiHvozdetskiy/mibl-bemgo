@@ -1,0 +1,21 @@
+@mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
+   $filepath: "/static/fonts/" + $file;
+   @font-face {
+      font-family: quote($style-name);
+      src: url($filepath + ".woff") format('woff'),
+         //url($filepath + ".woff2") format('woff2'),
+      url($filepath + ".ttf") format('truetype');
+      font-weight: $weight;
+      font-style: $style;
+      font-display: swap;
+   }
+}
+
+@mixin wordSize($size, $height, $weight:400) {
+   font-size: $size + rem;
+   font-weight: $weight;
+   line-height: $height + rem;
+}
+
+// Cmd + B
+//@include wordSize(12, 1.5, 700)

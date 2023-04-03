@@ -1,0 +1,39 @@
+@import 'base.scss';
+@import 'common.scss';
+@import 'mixin.scss';
+
+:root {
+   --primary-text-color: #6B7280;
+   --light-color: #ffffff;
+   --dark-color: #000000;
+   --accent-color: #3730A3;
+   --accent-color-hover: #E28B00;
+   --title-color: #1F2937;
+   --secondary-color: #718093;
+   --hamburger-color: #000;
+   --burger-color: #000;
+
+   --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   //розмір контейнера 1440px +30px для падінгів = 1470px
+   --viewport-width: 1440;
+   //--container-width: calc(var(--viewport-width) + 3rem);
+   --container-width: 147rem;
+
+   --family_Montserrat: 'Montserrat';
+   --family_Raleway: 'Raleway';
+   --family_Roboto: 'Roboto';
+
+   --font-family: --family_Montserrat;
+}
+
+@include font-face(var(--family_Montserrat), 'Montserrat-Bold', 700, normal);
+@include font-face(var(--family_Montserrat), 'Montserrat-Light', 300, normal);
+@include font-face(var(--family_Montserrat), 'Montserrat-Medium', 500, normal);
+@include font-face(var(--family_Montserrat), 'Montserrat-Italic', 400, italic);
+@include font-face(var(--family_Montserrat), 'Montserrat-Regular', 400, normal);
+
+@include font-face(var(--family_Roboto), 'Roboto-Regular', 400, normal);
+
+@include font-face(var(--family_Raleway), 'Raleway-Regular', 400, normal);
+@include font-face(var(--family_Raleway), 'Raleway-Bold', 700, normal);

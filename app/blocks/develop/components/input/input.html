@@ -1,0 +1,59 @@
+<div class="input @@mod">
+    @@if(isSelect != "") {
+        <input type="@@type" readonly name="@@name" id="@@name" class="input__elem" placeholder="@@placeholder">
+        <label for="@@name" class="input__label">@@label</label>
+        <div class="input__content">
+            <ul class="input__content_inner">
+                <li class="input__content_option" data-value="Пенсионер">Пенсионер</li>
+                <li class="input__content_option" data-value="Студент">Студент</li>
+                <li class="input__content_option" data-value="Неполная занятость">Неполная занятость</li>
+                <li class="input__content_option" data-value="Полная занятость">Полная занятость</li>
+                <li class="input__content_option" data-value="Пенсионер">Пенсионер</li>
+                <li class="input__content_option" data-value="Студент">Студент</li>
+                <li class="input__content_option" data-value="Неполная занятость">Неполная занятость</li>
+                <li class="input__content_option" data-value="Полная занятость">Полная занятость</li>
+            </ul>
+        </div>
+    }
+    @@if(hasInformation != "") {
+        <div class="input__info">
+            <img class="input__info_icon" src="./static/img/i-caution-button-blue.svg" alt="">
+            <div class="input__info_caution">
+                <p>Если ответ “Нет”, “Не знаю” - укажите 0</p>
+            </div>
+        </div>
+    }
+    @@if(isSelect == "") {
+        <input type="@@type" name="@@name" id="@@name" class="input__elem" placeholder="@@placeholder">
+        <label for="@@name" class="input__label">@@label</label>
+        <span class="input__error-text">Ошибка поля</span>
+    }
+    @@if(isDate != "") {
+        <img class="input__calendar" src="./static/img/i-calendar.svg" alt="">
+    }
+    @@if(confirmNumber != "") {
+        <button class="input__change input__change_number" type="button"><span>Изменить номер</span></button>
+        <button class="input__change input__change_phone" type="button"><span>Подтвердить с помощью звонка</span></button>
+    }
+    @@if(confirmSMS != "") {
+        <!--Add class " input__change_resend_timeout " to block button of resend-->
+
+        <button class="input__change input__change_resend" type="button">
+            <span class="input__change_timer input__change_timer_show">2:15</span>
+            <span>Отправить повторно</span>
+        </button>
+    }
+</div>
+
+<!--@@include( 'develop/components/input/input.html', {-->
+<!--"type": "text",-->
+<!--"mod": "input_recovery",-->
+<!--"isDate": "",-->
+<!--"isSelect": "",-->
+<!--"hasInformation": "",-->
+<!--"confirmNumber": "",-->
+<!--"confirmSMS": "",-->
+<!--"placeholder": "+7(9XX) XXX - XX - XX",-->
+<!--"name": "tel",-->
+<!--"label": "Номер мобильного"-->
+<!--})-->

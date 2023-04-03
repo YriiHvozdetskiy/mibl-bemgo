@@ -1,0 +1,89 @@
+{
+  "items": [
+    {
+      "title": "Web design",
+      "text": "Provide our customers with optimized user-friendly experience to increase the efficiency of digital products.",
+      "link": "See Works",
+      "img": "arrow-right"
+    },
+    {
+      "title": "Branding",
+      "text": "Understanding the business and their target customers, I’m the bridges to bring the brand closer to their clients.",
+      "link": "See Works",
+      "img": "arrow-right"
+    },
+    {
+      "title": "Photography",
+      "text": "While stock photography is a great option for sourcing high-quality photos, it’s important that you choose your photos thoughtfully.",
+      "link": "See Works",
+      "img": "arrow-right"
+    },
+    {
+      "title": "Mobile design",
+      "text": "Mobile application development is a highlight that businesses are interested in at the moment and in the future.",
+      "link": "See Works",
+      "img": "arrow-right"
+    },
+    {
+      "title": "3D Modeling",
+      "text": "Help you translate your existing design or concept into CAD or to work with you to develop the ideal design. 3D Models great for modern digital artHelp you translate your existing design or concept into CAD or to work with you to develop the ideal design. 3D Models great for modern digital art",
+      "link": "See Works",
+      "img": "arrow-right"
+    },
+    {
+      "title": "Video creating",
+      "text": "Create high-impact social videos with our easy video maker. Use custom video templates to find the right story for your business.",
+      "link": "See Works",
+      "img": "arrow-right"
+    },
+  {
+    "title": "Video creating",
+    "text": "Create high-impact social videos with our easy video maker. Use custom video templates to find the right story for your business.",
+    "link": "See Works",
+    "img": "arrow-right"
+  }
+  ],
+  "careersInfoItem": [
+    {
+      "img": "careers-info-1",
+      "title": "Business planning",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "img": "careers-info-2",
+      "title": "Financial planning",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "img": "careers-info-3",
+      "title": "Market Analytics",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "img": "careers-info-1",
+      "title": "Market Analytics",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "img": "careers-info-1",
+      "title": "Market Analytics",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "img": "careers-info-1",
+      "title": "Market Analytics",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "img": "careers-info-1",
+      "title": "Market Analytics",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "img": "careers-info-1",
+      "title": "Market Analytics",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ]
+
+}
