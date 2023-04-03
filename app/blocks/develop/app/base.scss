@@ -15,7 +15,7 @@ html {
       font-size: calc(9920px / var(--viewport-width));
    }
    @media screen and (min-width: 1024px) {
-      font-size: calc(10240px / var(--viewport-width));
+      font-size: 10px;
    }
    @media screen and (min-width: 1168px) {
       font-size: calc(11680px / var(--viewport-width));
@@ -30,7 +30,7 @@ html {
       font-size: calc(13660px / var(--viewport-width));
    }
    @media screen and (min-width: 1440px) {
-      font-size: 10px;
+      font-size: calc(14400px / var(--viewport-width));
    }
    @media screen and (min-width: 1496px) {
       font-size: calc(14960px / var(--viewport-width));

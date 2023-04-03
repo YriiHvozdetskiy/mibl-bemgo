@@ -1,17 +1,167 @@
 @import '../app/placeholder.scss';
 //@import "../components/select-dropdown/select-dropdown.scss"; щоб були видні стилі
 
-/* ============================ hero START ================================================================= */
-.hero {
-	&__title {
-		color: #E28B00;
-	}
+/* ============================ social-media START ================================================================= */
+.social-media {
+   background: linear-gradient(107.04deg, #EAF2F4 19.74%, #FBF4DD 75.61%);
+   // .social-media__container
+   &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 120px 15px 75px;
+      @media screen and (max-width: 666px) {
+         padding: 65px 15px;
+      }
+      @media screen and (max-width: 1024px) {
+         flex-direction: column-reverse;
+         align-items: center;
+      }
+   }
+   // .social-media__wrapper
+   &__wrapper {
+      max-width: 470px;
+      width: 100%;
+      @media screen and (min-width: 667px) {
+         margin-right: 10px;
+      }
+   }
+   // .social-media__label
+   &__label {
+      display: inline-block;
+      background: #244CD9;
+      border-radius: 27px;
+      padding: 3px 12px;
+      &:not(:last-child) {
+         margin-bottom: 8px;
+      }
+      & > * {
+         font-family: 'Montserrat';
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 20px;
+         text-transform: lowercase;
+         color: #FFFFFF;
+      }
+   }
+   // .social-media__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 24px;
+      }
+      @media screen and (min-width: 667px) {
+         position: relative;
+      }
+      & > * {
+         font-family: 'Proxima Nova';
+         font-weight: 700;
+         font-size: 46px;
+         line-height: 50px;
+         text-transform: capitalize;
+         color: #25293F;
+         & > * {
+            color: #244CD9;
+         }
+      }
+   }
+   // .social-media__text
+   &__text {
+      &:not(:last-child) {
+         margin-bottom: 24px;
+      }
+      @media screen and (min-width: 667px) {
+         max-width: 335px;
+         width: 100%;
+      }
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-size: 22px;
+         line-height: 27px;
+         color: #25293F;
+      }
+   }
+   // .social-media__data
+   &__data {
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+         margin-bottom: 50px;
+      }
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-size: 22px;
+         line-height: 27px;
+         color: #244CD9;
+      }
+   }
+   // .social-media__data-icon
+   &__data-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+      & > * {
+         display: inline-block;
+         width: 24px;
+         height: 24px;
+      }
+   }
+   // .social-media__icon
+   &__icon {
+      position: absolute;
+      right: -26px;
+      bottom: -94px;
+      width: 112px;
+      height: 112px;
+      @media screen and (max-width: 666px) {
+         display: none;
+      }
+      & > * {
+         width: 112px;
+         height: 112px;
+      }
+   }
+   // .social-media__link
+   &__link {
+      display: inline-block;
+      background: #30B85E;
+      border-radius: 6px;
+      padding: 14px 68px;
+      &:not(:last-child) {
+         margin-bottom: 64px;
+      }
+      & > * {
+         font-family: 'Museo Sans Cyrl';
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 22px;
+         color: #FFFFFF;
+      }
+   }
+   // .social-media__description
+   &__description {
+      & > * {
+         font-family: 'Museo Sans Cyrl';
+         font-weight: 300;
+         font-size: 22px;
+         line-height: 26px;
+         color: #455A64;
+      }
+   }
+   // .social-media__img
+   &__img {
+      max-width: 424px;
+      width: 100%;
+      height: 1px;
+      min-height: 478px;
+      max-height: 478px;
+      @media screen and (max-width: 1024px) {
+         margin-bottom: 40px;
+      }
+   }
 }
-
-.swiper-button-next::after, .swiper-button-prev::after{
-	font-size: 1rem;
-}
-
-/* ============================ hero END ================================================================= */
+/* ============================ social-media END ================================================================= */
 
 
