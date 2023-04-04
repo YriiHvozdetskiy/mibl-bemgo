@@ -16,7 +16,7 @@
       @media screen and (max-width: 666px) {
          padding: 65px 15px;
       }
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1023px) {
          flex-direction: column-reverse;
          align-items: center;
       }
@@ -25,7 +25,7 @@
    &__wrapper {
       max-width: 470px;
       width: 100%;
-      @media screen and (min-width: 667px) {
+      @media screen and (min-width: 1024px) {
          margin-right: 10px;
       }
    }
@@ -134,7 +134,7 @@
          min-height: 386px;
          max-height: 386px;
       }
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1023px) {
          margin-bottom: 40px;
       }
    }
@@ -333,6 +333,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            background: #8BE7AA;
             counter-increment: myCounter;
             content: counter(myCounter);
             display: inline-block;
@@ -396,3 +397,107 @@
    }
 }
 /* ============================ what-you-get END ================================================================= */
+/* ============================ speaker START ================================================================= */
+.speaker {
+   // .speaker__container
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 150px 15px 125px;
+      @media screen and (max-width: 1023px) {
+         flex-direction: column;
+         align-items: center;
+         padding: 80px 15px;
+      }
+   }
+   // .speaker__img
+   &__img {
+      max-width: 595px;
+      width: 100%;
+      height: 1px;
+      min-height: 498px;
+      max-height: 498px;
+      margin: 0 10px 0 0;
+      @media screen and (max-width: 1023px) {
+         margin: 0 0 40px 0;
+      }
+      @media screen and (max-width: 666px) {
+         min-height: 282px;
+         max-height: 282px;
+      }
+   }
+   // .speaker__wrapper
+   &__wrapper {
+      @media screen and (min-width: 667px) {
+         max-width: 455px;
+         width: 100%;
+      }
+      @media screen and (max-width: 666px) {
+         align-self: flex-start;
+      }
+
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-size: 16px;
+         line-height: 25px;
+         color: #455A64;
+         &:not(:last-child) {
+            margin-bottom: 40px;
+         }
+
+         & > * {
+            font-weight: 700;
+         }
+      }
+   }
+   // .speaker__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         text-transform: capitalize;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
+   }
+   // .speaker__list
+   &__list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+
+      & > li {
+         width: 28px;
+         height: 28px;
+         &:not(:last-child) {
+            margin-right: 16px;
+         }
+
+         & > a {
+            display: block;
+            width: 28px;
+            height: 28px;
+         }
+         & > * {
+            display: block;
+            width: 28px;
+            height: 28px;
+         }
+      }
+   }
+}
+/* ============================ speaker END ================================================================= */
