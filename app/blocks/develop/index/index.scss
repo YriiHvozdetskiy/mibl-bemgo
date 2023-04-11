@@ -1,3 +1,62 @@
 @import '../app/placeholder.scss';
 //@import "../components/select-dropdown/select-dropdown.scss"; щоб були видні стилі
 
+/* ============================ examples START ================================================================= */
+.examples {
+   // .examples__container
+   &__container {
+      max-width: var(--container-width);
+      width: 100%;
+      margin: 0 auto;
+      padding: 60px 15px 125px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      @media screen and (max-width: 666px) {
+         padding: 40px 15px 70px;
+         gap: 20px;
+         flex-direction: column;
+         flex-wrap: nowrap;
+      }
+   }
+   // .examples__item
+   &__item {
+      flex: 0 0 calc(33.33% - 20px);
+      @media screen and (max-width: 767px) {
+         flex: 0 0 calc(50% - 15px);
+      }
+      @media screen and (max-width: 666px) {
+         flex: 0 0 100%;
+      }
+   }
+
+   // .examples__img
+   &__img {
+      display: block;
+      border: 1px solid #E5E5E5;
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+      & > img {
+         @media screen and (min-width: 667px) {
+            height: 1px;
+            min-height: 200px;
+            max-height: 200px;
+         }
+      }
+   }
+   // .examples__title
+   &__title {
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 24px;
+         align-items: center;
+         color: #212121;
+
+      }
+   }
+}
+
+/* ============================ examples END ================================================================= */
