@@ -2,6 +2,172 @@
 //@import "../components/select-dropdown/select-dropdown.scss"; щоб були видні стилі
 //<?php echo get_template_directory_uri(); ?>/assets/images/examples-1.jpg
 //font-family: Proxima Nova Rg;
-/* ============================ examples START ================================================================= */
+//font-family: Proxima Nova Bold;
+/* ============================ book-launch START ================================================================= */
+.book-launch {
+   position: relative;
+   overflow: hidden;
+   &.green {
+      background: linear-gradient(80.5deg, #E2E8FB 2.55%, #E2FDD3 98.57%);
+   }
+   &.purple {
+      background: linear-gradient(80.5deg, #E2E8FB 2.55%, #FAF1EC 98.57%);
+   }
+   // .book-launch__container
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 90px 15px;
+      gap: 15px;
+      @media screen and (max-width: 1023px) {
+         flex-direction: column;
+         padding: 50px 15px;
 
-/* ============================ examples END ================================================================= */
+      }
+      @media screen and (min-width: 1024px) and (max-width: 2056px) {
+         padding: 90px 0 90px 15px;
+      }
+   }
+   // .book-launch__wrapper
+   &__wrapper {
+      max-width: 516px;
+      width: 100%;
+
+   }
+   // .book-launch__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 24px;
+      }
+      & > * {
+         font-family: Proxima Nova Bold;
+         font-weight: 700;
+         font-size: 46px;
+         line-height: 50px;
+         color: #25293F;
+         & > * {
+            color: #30B85E;
+         }
+      }
+   }
+   // .book-launch__text
+   &__text {
+      & > * {
+         font-family: 'Proxima Nova Rg';
+         font-size: 16px;
+         line-height: 19px;
+         color: #25293F;
+      }
+      &:not(:last-child) {
+         margin-bottom: 8px;
+      }
+      // .book-launch__text_main
+      &_main {
+         &:not(:last-child) {
+            margin-bottom: 24px;
+         }
+         & > * {
+            font-family: 'Proxima Nova Rg';
+            font-size: 22px;
+            line-height: 27px;
+            color: #25293F;
+            & > * {
+               font-family: 'Proxima Nova Bold';
+               font-weight: 700;
+            }
+         }
+      }
+      // .book-launch__text_bottom
+      &_bottom {
+         & > * {
+            font-family: 'Proxima Nova Bold';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: #25293F;
+         }
+      }
+   }
+   // .book-launch__box
+   &__box {
+      max-width: 406px;
+      width: 100%;
+      padding: 16px 24px;
+      border: 1px dashed #38555F;
+      border-radius: 8px;
+      @media screen and (max-width: 666px) {
+         padding: 16px;
+      }
+      &:not(:last-child) {
+         margin-bottom: 50px;
+         @media screen and (max-width: 666px) {
+            margin-bottom: 24px;
+         }
+      }
+   }
+   // .book-launch__list
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-left: 24px;
+      &:not(:last-child) {
+         margin-bottom: 8px;
+      }
+   }
+   // .book-launch__item
+   &__item {
+      font-family: 'Proxima Nova Rg';
+      font-size: 16px;
+      line-height: 19px;
+      color: #25293F;
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+      }
+   }
+   // .book-launch__link
+   &__link {
+      min-width: 234px;
+      background: #30B85E;
+      border-radius: 6px;
+      padding: 14px;
+      font-family: 'Museo Sans Cyrl';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      &:not(:last-child) {
+         margin-bottom: 24px;
+      }
+   }
+   &__img {
+      //max-width: 562px;
+      //width: 100%;
+      //height: 316px;
+   }
+   &__decor {
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      right: -10px;
+      display: none;
+      @media screen and (min-width: 1024px) {
+         display: block;
+      }
+      & > * {
+         width: 627px;
+         height: 772px;
+         display: block;
+      }
+   }
+}
+
+/* ============================ book-launch END ================================================================= */
