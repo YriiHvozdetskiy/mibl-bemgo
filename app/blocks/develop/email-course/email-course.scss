@@ -199,6 +199,134 @@
       }
    }
 }
+
+.learn {
+   padding: 0;
+   background: linear-gradient(89.92deg, #E7E4F5 0.06%, #FFF4CF 99.93%);
+   // .learn__container
+   &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 100px 15px;
+      @media screen and (max-width: 666px) {
+         padding: 64px 15px;
+      }
+   }
+   // .learn__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 60px;
+         @media screen and (max-width: 666px) {
+            margin-bottom: 50px;
+         }
+      }
+      & > * {
+         font-family: Proxima Nova Bold;
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         text-transform: capitalize;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
+   }
+   // .learn__list
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      counter-reset: myCounter;
+
+      & > li {
+         position: relative;
+         display: flex;
+         color: #25293F;
+         padding-top: 40px;
+         flex: 0 1 calc(25% - 15px);
+         @media screen and (max-width: 768px) {
+            flex: 0 1 calc(50% - 15px);
+         }
+         @media screen and (max-width: 666px) {
+            flex: 0 1 calc(100% - 15px);
+         }
+         & > * {
+            font-family: 'Proxima Nova Rg';
+            font-size: 22px;
+            line-height: 30px;
+            & > * {
+               font-family: 'Proxima Nova Bold';
+               font-weight: 700;
+            }
+         }
+
+         &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #8BE7AA;
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            display: inline-block;
+            text-align: center;
+            min-width: 38px;
+            height: 23px;
+            margin-right: 2px;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 25px;
+            border-radius: 33px;
+            border: 1px solid #000000;
+         }
+         &:nth-child(1) {
+            &:before {
+               background: #8BE7AA;
+            }
+         }
+         &:nth-child(2) {
+            &:before {
+               background: #8BDCE7;
+            }
+         }
+         &:nth-child(3) {
+            &:before {
+               background: #E78BDD;
+            }
+         }
+         &:nth-child(4) {
+            &:before {
+               background: #8BE7D1;
+            }
+         }
+         &:nth-child(5) {
+            &:before {
+               background: #E5E78B;
+            }
+         }
+         &:nth-child(6) {
+            &:before {
+               background: #E7918B;
+            }
+         }
+         &:nth-child(7) {
+            &:before {
+               background: #E7C88B;
+            }
+         }
+      }
+   }
+   // .learn__link
+   &__link {
+   }
+}
+
 /* ============================ email-course END ================================================================= */
 
 
@@ -360,6 +488,7 @@
       }
    }
 }
+
 /* ============================ social-media END ================================================================= */
 
 /* ============================ feel START ================================================================= */
@@ -456,6 +585,7 @@
       }
    }
 }
+
 /* ============================ feel END ================================================================= */
 /* ============================ what-you-get START ================================================================= */
 .what-you-get {
@@ -583,6 +713,7 @@
    &__link {
    }
 }
+
 .link {
    display: inline-block;
    background: #30B85E;
@@ -596,6 +727,7 @@
       color: #FFFFFF;
    }
 }
+
 /* ============================ what-you-get END ================================================================= */
 /* ============================ speaker START ================================================================= */
 .speaker {
