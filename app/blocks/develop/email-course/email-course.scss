@@ -96,22 +96,107 @@
    }
 }
 
-
 .about-author {
+   padding: 0;
    // .about-author__container
    &__container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 125px 15px;
+      @media screen and (max-width: 1023px) {
+         flex-direction: column;
+         align-items: center;
+         padding: 80px 15px;
+      }
    }
    // .about-author__img
    &__img {
+      max-width: 550px;
+      width: 100%;
+      height: 1px;
+      min-height: 498px;
+      max-height: 498px;
+      margin: 0 10px 0 0;
+      @media screen and (max-width: 1023px) {
+         margin: 0 0 40px 0;
+      }
+      @media screen and (max-width: 666px) {
+         min-height: 282px;
+         max-height: 282px;
+      }
    }
    // .about-author__wrapper
    &__wrapper {
+      @media screen and (min-width: 667px) {
+         max-width: 455px;
+         width: 100%;
+      }
+      @media screen and (max-width: 666px) {
+         align-self: flex-start;
+      }
+
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-size: 16px;
+         line-height: 25px;
+         color: #455A64;
+         &:not(:last-child) {
+            margin-bottom: 40px;
+         }
+
+         & > * {
+            font-weight: 700;
+         }
+      }
    }
    // .about-author__title
    &__title {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+      & > * {
+         font-family: Proxima Nova Bold;
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         text-transform: capitalize;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
    }
    // .about-author__list
    &__list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+
+      & > li {
+         width: 28px;
+         height: 28px;
+         &:not(:last-child) {
+            margin-right: 16px;
+         }
+
+         & > a {
+            display: block;
+            width: 28px;
+            height: 28px;
+         }
+         & > * {
+            display: block;
+            width: 28px;
+            height: 28px;
+         }
+      }
    }
 }
 /* ============================ email-course END ================================================================= */
