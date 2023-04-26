@@ -1,0 +1,617 @@
+//font-family: Proxima Nova Rg;
+//font-family: Proxima Nova Bold;
+//font-family: Museo Sans Cyrl;
+//font-family: Century Gothic;
+//section  padding: 0;
+/* ============================ email-course START ================================================================= */
+.email-course {
+   padding: 0;
+   background: linear-gradient(80.5deg, #F1F9EB 2.55%, #FFF5E6 98.57%);
+   // .email-course__container
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 150px 15px 140px;
+      @media screen and (max-width: 1023px) {
+         flex-direction: column;
+         padding: 50px 15px;
+      }
+   }
+   // .email-course__wrapper
+   &__wrapper {
+      max-width: 516px;
+      width: 100%;
+   }
+   // .email-course__label
+   &__label {
+      display: inline-block;
+      padding: 3px 23px;
+      background: #30B85E;
+      border-radius: 27px;
+      &:not(:last-child) {
+         margin-bottom: 8px;
+      }
+      & > * {
+         font-family: 'Montserrat';
+         font-weight: 800;
+         font-size: 16px;
+         line-height: 20px;
+         text-transform: uppercase;
+         color: #FFFFFF;
+      }
+   }
+   // .email-course__title
+   &__title {
+      & > * {
+         font-family: Proxima Nova Bold;
+         font-weight: 700;
+         font-size: 46px;
+         line-height: 50px;
+         color: #25293F;
+         & > * {
+            background: transparent;
+            color: #30B85E;
+         }
+      }
+   }
+   // .email-course__text
+   &__text {
+      max-width: 426px;
+      width: 100%;
+      &:not(:last-child) {
+         margin-bottom: 50px;
+      }
+      & > * {
+         font-family: 'Proxima Nova Rg';
+         font-size: 22px;
+         line-height: 27px;
+         color: #25293F;
+         & > * {
+            font-family: 'Proxima Nova Bold';
+            font-weight: 700;
+         }
+      }
+   }
+   // .email-course__link
+   &__link {
+      font-family: 'Museo Sans Cyrl';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      min-width: 234px;
+      background: #30B85E;
+      border-radius: 6px;
+      padding: 14px;
+      text-align: center;
+   }
+   // .email-course__img
+   &__img {
+   }
+}
+
+
+.about-author {
+   // .about-author__container
+   &__container {
+   }
+   // .about-author__img
+   &__img {
+   }
+   // .about-author__wrapper
+   &__wrapper {
+   }
+   // .about-author__title
+   &__title {
+   }
+   // .about-author__list
+   &__list {
+   }
+}
+/* ============================ email-course END ================================================================= */
+
+
+.social-media {
+   background: linear-gradient(107.04deg, #EAF2F4 19.74%, #FBF4DD 75.61%);
+   // .social-media__container
+   &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 120px 15px 75px;
+      @media screen and (max-width: 666px) {
+         padding: 65px 15px;
+      }
+      @media screen and (max-width: 1023px) {
+         flex-direction: column-reverse;
+         align-items: center;
+      }
+   }
+   // .social-media__wrapper
+   &__wrapper {
+      max-width: 470px;
+      width: 100%;
+      @media screen and (min-width: 1024px) {
+         margin-right: 10px;
+      }
+   }
+   // .social-media__label
+   &__label {
+      display: inline-block;
+      background: #244CD9;
+      border-radius: 27px;
+      padding: 3px 12px;
+      &:not(:last-child) {
+         margin-bottom: 8px;
+      }
+      & > * {
+         font-family: 'Montserrat';
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 20px;
+         text-transform: lowercase;
+         color: #FFFFFF;
+      }
+   }
+   // .social-media__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 24px;
+      }
+      @media screen and (min-width: 667px) {
+         position: relative;
+      }
+      & > * {
+         font-family: 'Proxima Nova';
+         font-weight: 700;
+         font-size: 46px;
+         line-height: 50px;
+         text-transform: capitalize;
+         color: #25293F;
+         & > * {
+            color: #244CD9;
+         }
+      }
+   }
+   // .social-media__text
+   &__text {
+      &:not(:last-child) {
+         margin-bottom: 24px;
+      }
+      @media screen and (min-width: 667px) {
+         max-width: 335px;
+         width: 100%;
+      }
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-size: 22px;
+         line-height: 27px;
+         color: #25293F;
+      }
+   }
+   // .social-media__data
+   &__data {
+      &:not(:last-child) {
+         margin-bottom: 50px;
+      }
+   }
+   // .social-media__data-icon
+   &__data-icon {
+   }
+   // .social-media__icon
+   &__icon {
+      position: absolute;
+      right: -26px;
+      bottom: -94px;
+      width: 112px;
+      height: 112px;
+      @media screen and (max-width: 666px) {
+         display: none;
+      }
+      & > * {
+         width: 112px;
+         height: 112px;
+      }
+   }
+   // .social-media__link
+   &__link {
+      &:not(:last-child) {
+         margin-bottom: 64px;
+      }
+   }
+   // .social-media__description
+   &__description {
+      & > * {
+         font-family: 'Museo Sans Cyrl';
+         font-weight: 300;
+         font-size: 22px;
+         line-height: 26px;
+         color: #455A64;
+      }
+   }
+   // .social-media__img
+   &__img {
+      max-width: 424px;
+      width: 100%;
+      height: 1px;
+      min-height: 478px;
+      max-height: 478px;
+      @media screen and (max-width: 666px) {
+         min-height: 386px;
+         max-height: 386px;
+      }
+      @media screen and (max-width: 1023px) {
+         margin-bottom: 40px;
+      }
+   }
+}
+
+.schedule {
+   display: flex;
+   align-items: center;
+   & > * {
+      font-family: Proxima Nova Rg;
+      font-size: 22px;
+      line-height: 27px;
+      color: #244CD9;
+   }
+   &__icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+      & > * {
+         display: inline-block;
+         width: 24px;
+         height: 24px;
+      }
+   }
+}
+/* ============================ social-media END ================================================================= */
+
+/* ============================ feel START ================================================================= */
+.feel {
+   position: relative;
+   // .feel__img
+   &__img {
+      padding: 44px 70px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      @media screen and (max-width: 666px) {
+         padding: 64px 15px;
+      }
+   }
+   // .feel__container
+   &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 150px 55px 80px;
+      @media screen and (max-width: 666px) {
+         padding: 116px 15px 30px;
+      }
+   }
+   // .feel__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 40px;
+      }
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-weight: 700;
+         font-size: 28px;
+         line-height: 34px;
+         text-transform: capitalize;
+         color: #212121;
+         text-align: center;
+         & > * {
+            color: #244CD9;
+         }
+      }
+   }
+   // .feel__wrapper
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 680px;
+      width: 100%;
+      padding: 24px 20px;
+      background: #FAFAFA;
+      border: 1px solid #25293F;
+      border-radius: 8px;
+      @media screen and (max-width: 666px) {
+         padding: 24px 40px;
+      }
+   }
+   // .feel__text
+   &__text {
+      &:not(:last-child) {
+         margin-bottom: 20px;
+         @media screen and (max-width: 666px) {
+            margin-bottom: 16px;
+         }
+      }
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-size: 16px;
+         line-height: 19px;
+         color: #25293F;
+         text-align: center;
+         & > * {
+            font-weight: 700;
+         }
+      }
+   }
+   // .feel__data
+   &__data {
+      & > * {
+         font-size: 16px;
+         line-height: 19px;
+      }
+      &:not(:last-child) {
+         margin-bottom: 18px;
+      }
+   }
+}
+/* ============================ feel END ================================================================= */
+/* ============================ what-you-get START ================================================================= */
+.what-you-get {
+   position: relative;
+   //.what-you-get__img
+   &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+   }
+   // .what-you-get__container
+   &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 100px 15px;
+      @media screen and (max-width: 666px) {
+         padding: 64px 15px;
+      }
+   }
+   // .what-you-get__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 60px;
+         @media screen and (max-width: 666px) {
+            margin-bottom: 50px;
+         }
+      }
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         text-transform: capitalize;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
+   }
+   // .what-you-get__list
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      counter-reset: myCounter;
+      &:not(:last-child) {
+         margin-bottom: 50px;
+      }
+
+      & > li {
+         position: relative;
+         display: flex;
+         font-size: 22px;
+         line-height: 30px;
+         color: #25293F;
+         padding-top: 40px;
+         flex: 1 1 calc(33.33% - 50px);
+         @media screen and (max-width: 768px) {
+            flex: 1 1 calc(50% - 50px);
+         }
+         @media screen and (max-width: 666px) {
+            flex: 1 1 calc(100% - 50px);
+         }
+
+         &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #8BE7AA;
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            display: inline-block;
+            text-align: center;
+            min-width: 38px;
+            height: 23px;
+            margin-right: 2px;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 25px;
+            border-radius: 33px;
+
+         }
+         &:nth-child(1) {
+            &:before {
+               background: #8BE7AA;
+            }
+         }
+         &:nth-child(2) {
+            &:before {
+               background: #8BDCE7;
+            }
+         }
+         &:nth-child(3) {
+            &:before {
+               background: #E78BDD;
+            }
+         }
+         &:nth-child(4) {
+            &:before {
+               background: #E5E78B;
+            }
+         }
+         &:nth-child(5) {
+            &:before {
+               background: #E78B8B;
+            }
+         }
+         &:nth-child(6) {
+            &:before {
+               background: #8BE7D1;
+            }
+         }
+      }
+   }
+   // .what-you-get__link
+   &__link {
+   }
+}
+.link {
+   display: inline-block;
+   background: #30B85E;
+   border-radius: 6px;
+   padding: 14px 68px;
+   & > * {
+      font-family: 'Museo Sans Cyrl';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
+   }
+}
+/* ============================ what-you-get END ================================================================= */
+/* ============================ speaker START ================================================================= */
+.speaker {
+   // .speaker__container
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 150px 15px 125px;
+      @media screen and (max-width: 1023px) {
+         flex-direction: column;
+         align-items: center;
+         padding: 80px 15px;
+      }
+   }
+   // .speaker__img
+   &__img {
+      max-width: 595px;
+      width: 100%;
+      height: 1px;
+      min-height: 498px;
+      max-height: 498px;
+      margin: 0 10px 0 0;
+      @media screen and (max-width: 1023px) {
+         margin: 0 0 40px 0;
+      }
+      @media screen and (max-width: 666px) {
+         min-height: 282px;
+         max-height: 282px;
+      }
+   }
+   // .speaker__wrapper
+   &__wrapper {
+      @media screen and (min-width: 667px) {
+         max-width: 455px;
+         width: 100%;
+      }
+      @media screen and (max-width: 666px) {
+         align-self: flex-start;
+      }
+
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-size: 16px;
+         line-height: 25px;
+         color: #455A64;
+         &:not(:last-child) {
+            margin-bottom: 40px;
+         }
+
+         & > * {
+            font-weight: 700;
+         }
+      }
+   }
+   // .speaker__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+      & > * {
+         font-family: Proxima Nova Rg;
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         text-transform: capitalize;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
+   }
+   // .speaker__list
+   &__list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+
+      & > li {
+         width: 28px;
+         height: 28px;
+         &:not(:last-child) {
+            margin-right: 16px;
+         }
+
+         & > a {
+            display: block;
+            width: 28px;
+            height: 28px;
+         }
+         & > * {
+            display: block;
+            width: 28px;
+            height: 28px;
+         }
+      }
+   }
+}
