@@ -1,0 +1,281 @@
+//font-family: Proxima Nova Rg;
+//font-family: Proxima Nova Bold;
+//font-family: Museo Sans Cyrl;
+//font-family: Century Gothic;
+//img height:100%; width:100%;
+/* ============================ academy START ================================================================= */
+.academy {
+   padding: 0;
+   // .academy__container
+   &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 144px 15px 162px;
+      @media screen and (max-width: 666px) {
+         padding: 64px 15px;
+      }
+   }
+   // .academy__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 800;
+         font-size: 52px;
+         line-height: 56px;
+         text-align: center;
+         text-transform: capitalize;
+         color: #25293F;
+         @media screen and (max-width: 666px) {
+            font-size: 40px;
+            line-height: 50px;
+         }
+      }
+   }
+   // .academy__text
+   &__text {
+      text-align: center;
+      & > * {
+         font-family: 'Proxima Nova Rg';
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 22px;
+         text-align: center;
+         color: #212121;
+      }
+   }
+}
+
+.email-courses {
+   padding: 0;
+   // .email-courses__container
+   &__container {
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 90px 15px;
+      @media screen and (max-width: 666px) {
+         padding: 60px 15px;
+      }
+   }
+   // .email-courses__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 40px;
+      }
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         text-transform: capitalize;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
+   }
+   // .email-courses__list
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      @media screen and (max-width: 666px) {
+         flex-direction: column;
+      }
+   }
+   // .email-courses__item
+   &__item {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 calc(100% / 2 - 15px);
+   }
+   // .email-courses__img
+   &__img {
+      height: 1px;
+      max-height: 264px;
+      min-height: 264px;
+
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+
+      & > * {
+         height: 100%;
+         width: 100%;
+      }
+   }
+   // .email-courses__wrapper
+   &__wrapper {
+      max-width: 454px;
+      width: 100%;
+
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+   // .email-courses__title-item
+   &__title-item {
+      &:not(:last-child) {
+         margin-bottom: 4px;
+      }
+
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 24px;
+         color: #212121;
+      }
+   }
+   // .email-courses__link
+   &__link {
+      border: 1px solid #30B85E;
+      border-radius: 4px;
+      font-family: Museo Sans Cyrl;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+      text-align: center;
+      text-transform: capitalize;
+      color: #30B85E;
+      padding: 10px;
+      min-width: 160px;
+      align-self: flex-start;
+   }
+   // .email-courses__text-item
+   &__text-item {
+      & > * {
+         font-family: 'Proxima Nova Rg';
+         font-weight: 300;
+         font-size: 16px;
+         line-height: 19px;
+         color: #455A64;
+      }
+   }
+   &__inner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+}
+
+.academy-quizzes {
+   padding: 0;
+   // .academy-quizzes__container
+   &__container {
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 15px 90px;
+      @media screen and (max-width: 666px) {
+         padding: 0 15px 60px;
+      }
+   }
+   // .academy-quizzes__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 40px;
+      }
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         text-transform: capitalize;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
+   }
+   // .academy-quizzes__item
+   &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: calc(50% - 15px);
+   }
+   // .academy-quizzes__img
+   &__img {
+      height: 1px;
+      max-height: 264px;
+      min-height: 264px;
+
+      & > * {
+         height: 100%;
+         width: 100%;
+      }
+   }
+   // .academy-quizzes__title-item
+   &__title-item {
+      max-width: 454px;
+      width: 100%;
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 24px;
+         color: #212121;
+      }
+   }
+   // .academy-quizzes__link
+   &__link {
+      border: 1px solid #30B85E;
+      border-radius: 4px;
+      font-family: Museo Sans Cyrl;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+      text-align: center;
+      text-transform: capitalize;
+      color: #30B85E;
+      padding: 10px;
+      min-width: 160px;
+      align-self: flex-start;
+   }
+}
+
+.checklists-templates {
+   // .checklists-templates__container
+   &__container {
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 15px 90px;
+      @media screen and (max-width: 666px) {
+         padding: 0 15px 60px;
+      }
+   }
+   // .checklists-templates__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 40px;
+      }
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         text-transform: capitalize;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
+   }
+}
+
+/* ============================ academy END ================================================================= */
