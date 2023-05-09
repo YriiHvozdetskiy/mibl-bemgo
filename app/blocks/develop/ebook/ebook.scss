@@ -116,4 +116,186 @@
    }
 }
 
+.ebook-packages {
+   padding: 0;
+   // .ebook-packages__container
+   &__container {
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 125px 15px;
+      @media screen and (max-width: 666px) {
+         padding: 80px 15px;
+      }
+   }
+   // .ebook-packages__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 60px;
+      }
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+            text-align: center;
+            & > * {
+               font-size: 28px;
+               line-height: 41px;
+            }
+         }
+         & > * {
+            color: #30B85E;
+         }
+      }
+   }
+   // .ebook-packages__list
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      row-gap: 60px;
+      column-gap: 78px;
+
+      @media screen and (max-width: 666px) {
+         gap: 40px;
+      }
+   }
+   // .ebook-packages__item
+   &__item {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #E0E0E0;
+      border-radius: 6px;
+      padding: 24px;
+      gap: 16px;
+
+      @media screen and (max-width: 666px) {
+         padding: 16px;
+      }
+      @media screen and (min-width: 667px) {
+         flex: 0 1 calc(100% / 2 - 39px);
+      }
+   }
+   // .ebook-packages__img
+   &__img {
+      height: 1px;
+      max-height: 272px;
+      min-height: 272px;
+
+      & > * {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+         border-radius: 6px;
+      }
+   }
+   // .ebook-packages__wrapper
+   &__wrapper {
+   }
+   // .ebook-packages__inner
+   &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+   }
+   // .ebook-packages__title-list
+   &__title-list {
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+         font-size: 24px;
+         line-height: 29px;
+         color: #212121;
+
+      }
+      &_label {
+         padding: 4px;
+         background: #F8DBA1;
+         text-align: center;
+         @media screen and (max-width: 666px) {
+            border-radius: 4px;
+         }
+
+         & > * {
+            font-family: 'Proxima Nova Rg';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            color: #212121;
+         }
+
+      }
+   }
+   // .ebook-packages__price
+   &__price {
+      display: flex;
+      gap: 4px;
+
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+
+         &:last-child {
+            font-size: 14px;
+            line-height: 17px;
+            color: #E85A59;
+         }
+         &:first-child {
+            font-size: 24px;
+            line-height: 29px;
+            color: #30B85E;
+         }
+      }
+   }
+   // .ebook-packages__box
+   &__box {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      @media screen and (max-width: 666px) {
+         flex-direction: column;
+         align-items: stretch;
+         gap: 12px;
+      }
+
+      & > * {
+         flex: 0 1 calc(100% / 2 - 12px);
+      }
+   }
+   // .ebook-packages__list-check
+   &__list-check {
+      list-style: none;
+      // .ebook-packages__list-check_free
+      &_free {
+      }
+   }
+   // .ebook-packages__list-check-wrapper
+   &__list-check-wrapper {
+      @media screen and (min-width: 667px) {
+         border: 1px solid #F8DBA1;
+         border-radius: 6px;
+         overflow: hidden;
+      }
+   }
+   // .ebook-packages__link
+   &__link {
+      background: #30B85E;
+      border-radius: 6px;
+      font-family: 'Museo Sans Cyrl';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      padding: 15px;
+      color: #FFFFFF;
+   }
+}
+
 /* ============================ ebook-author END ================================================================= */
