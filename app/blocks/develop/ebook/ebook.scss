@@ -1,7 +1,119 @@
 //font-family: Proxima Nova Rg;
 //font-family: Proxima Nova Bold;
+//font-family: Museo Sans Cyrl;
+//font-family: Century Gothic;
 //img height:100%; width:100%; object-fit: cover;
 //section  padding: 0;
-/* ============================ ebook START ================================================================= */
+/* ============================ ebook-author START ================================================================= */
+.ebook-author {
+   padding: 0;
+   // .ebook-author__container
+   &__container {
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 126px 15px;
+      @media screen and (max-width: 666px) {
+         padding: 80px 15px;
+      }
+   }
+   // .ebook-author__title
+   &__title {
+      display: inline-block;
+      &:not(:last-child) {
+         margin-bottom: 60px;
+         @media screen and (max-width: 666px) {
+            margin-bottom: 50px;
+         }
+      }
 
-/* ============================ ebook END ================================================================= */
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         align-items: center;
+         text-align: center;
+         text-transform: capitalize;
+         color: #212121;
+
+         & > * {
+            color: #30B85E;
+         }
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
+   }
+   // .ebook-author__list
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      row-gap: 40px;
+      column-gap: 20px;
+      @media screen and (max-width: 666px) {
+         flex-direction: column;
+      }
+   }
+   // .ebook-author__item
+   &__item {
+      @media screen and (min-width: 667px) {
+         flex: 0 1 calc(100% / 3 - 14px);
+      }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+         flex: 0 1 calc(100% / 2 - 10px);
+
+      }
+   }
+   // .ebook-author__wrapper
+   &__wrapper {
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+         margin-bottom: 8px;
+      }
+   }
+   // .ebook-author__img
+   &__img {
+      width: 30px;
+      height: 1px;
+      max-height: 30px;
+      min-height: 30px;
+
+      &:not(:last-child) {
+         margin-right: 16px;
+      }
+
+      & > * {
+         display: block;
+         width: 30px;
+         height: 30px;
+         object-fit: contain;
+      }
+   }
+   // .ebook-author__title-list
+   &__title-list {
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 24px;
+         text-transform: capitalize;
+         color: #212121;
+      }
+   }
+   // .ebook-author__text-list
+   &__text-list {
+      & > * {
+         font-family: 'Museo Sans Cyrl';
+         font-weight: 300;
+         font-size: 16px;
+         line-height: 25px;
+         color: #455A64;
+      }
+   }
+}
+
+/* ============================ ebook-author END ================================================================= */
