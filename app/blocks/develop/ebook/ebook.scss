@@ -5,6 +5,10 @@
 //img height:100%; width:100%; object-fit: cover;
 //section  padding: 0;
 /* ============================ ebook-author START ================================================================= */
+.ebook-container {
+   overflow: hidden;
+}
+
 .ebook-author {
    padding: 0;
    // .ebook-author__container
@@ -504,7 +508,6 @@
       flex: 0 1 calc(100% / 3 - 20px);
       @media screen and (min-width: 667px) and (max-width: 992px) {
          flex: 0 1 calc(100% / 2 - 15px);
-
       }
    }
    // .ebook-design-book__inner
@@ -571,6 +574,139 @@
    &__text {
       & > * {
          font-family: 'Proxima Nova Rg';
+         font-size: 16px;
+         line-height: 23px;
+         color: #455A64;
+      }
+   }
+}
+
+.ebook-marketing {
+   padding: 0;
+   // .ebook-marketing__container
+   &__container {
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 15px 125px;
+      @media screen and (max-width: 666px) {
+         padding: 80px 15px;
+      }
+   }
+   // .ebook-marketing__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 64px;
+         @media screen and (max-width: 666px) {
+            margin-bottom: 50px;
+         }
+      }
+
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 41px;
+         text-align: center;
+         color: #212121;
+         @media screen and (max-width: 666px) {
+            font-size: 28px;
+            line-height: 41px;
+         }
+      }
+   }
+   // .ebook-marketing__list
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 60px 20px;
+      @media screen and (max-width: 666px) {
+         gap: 40px;
+         flex-direction: column;
+      }
+
+      &:not(:last-child) {
+         margin-bottom: 24px;
+      }
+   }
+   // .ebook-marketing__item
+   &__item {
+      border-radius: 2px;
+      flex: 0 1 calc(100% / 4 - 15px);
+      @media screen and (min-width: 667px) and (max-width: 992px) {
+         flex: 0 1 calc(100% / 3 - 14px);
+      }
+      @media screen and (max-width: 666px) {
+         flex: 1 1 100%;
+      }
+   }
+   // .ebook-marketing__img
+   &__img {
+      border: 1px solid #E5E5E5;
+      border-radius: 2px;
+      height: 1px;
+      min-height: 150px;
+      max-height: 150px;
+      @media screen and (max-width: 666px) {
+         min-height: 195px;
+         max-height: 195px;
+      }
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+
+      & > * {
+         width: 100%;
+         height: 100%;
+         vertical-align: top;
+         object-fit: cover;
+      }
+   }
+   // .ebook-marketing__text-list
+   &__text-list {
+      &:not(:last-child) {
+         margin-bottom: 4px;
+      }
+
+      & > * {
+         font-family: 'Proxima Nova Rg';
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 24px;
+         color: #212121;
+      }
+   }
+   // .ebook-marketing__price
+   &__price {
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+
+      & > * {
+         font-family: 'Proxima Nova Bold';
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 24px;
+         text-transform: uppercase;
+         color: #66BB6A;
+      }
+   }
+   // .ebook-marketing__link
+   &__link {
+      font-family: 'Museo Sans Cyrl';
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      background: #30B85E;
+      border-radius: 4px;
+      padding: 10px 35px;
+   }
+   &__text {
+      & > * {
+         font-family: 'Proxima Nova Rg';
+         font-weight: 400;
          font-size: 16px;
          line-height: 23px;
          color: #455A64;
