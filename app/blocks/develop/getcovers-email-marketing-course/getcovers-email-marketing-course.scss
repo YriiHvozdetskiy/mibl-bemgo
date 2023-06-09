@@ -1,0 +1,38 @@
+.container {
+   max-width: 1180px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   height: 100%;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
+/* ============================ email-marketing-course START ================================================================= */
+.email-marketing-course-start {
+   // .email-marketing-course-start__container
+   &__container {
+      max-width: 1180px;
+      width: 100%;
+      padding: 0 30px;
+      height: 100%;
+      margin: 0 auto;
+   }
+   // .email-marketing-course-start__img
+   &__img {
+   }
+   // .email-marketing-course-start__title
+   &__title {
+   }
+   // .email-marketing-course-start__subtitle
+   &__subtitle {
+   }
+   // .email-marketing-course-start__description
+   &__description {
+   }
+   // .email-marketing-course-start__button
+   &__button {
+   }
+}
+
+/* ============================ email-marketing-course END ================================================================= */
