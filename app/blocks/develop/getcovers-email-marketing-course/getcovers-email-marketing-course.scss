@@ -103,63 +103,92 @@
    }
 }
 
-.email-marketing-course-second {
-   padding: 107px 0 115px;
-   //background: url("img/sprite/email-course-second.svg") no-repeat center;
-   //background-size: cover;
-   // .email-marketing-course-second__container
+.email-marketing-course-list {
+   // .email-marketing-course-list__container
    &__container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1180px;
+      max-width: 820px;
       width: 100%;
-      padding: 0 30px;
-      height: 100%;
+      padding: 48px 40px;
+      background: #F4F3FD;
       margin: 0 auto;
-      gap: 10px;
+
+      & ol {
+         counter-reset: myCounter;
+
+         & > li {
+            position: relative;
+            list-style: none;
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding-left: 75px;
+
+            &:not(:last-child) {
+               margin-bottom: 32px;
+            }
+
+            &::before {
+               position: absolute;
+               top: -3px;
+               left: 0;
+               counter-increment: myCounter;
+               content: "Day " counter(myCounter);
+               display: inline-block;
+               text-align: center;
+               min-width: 75px;
+               height: 25px;
+               font-family: 'Montserrat';
+               font-weight: 800;
+               font-size: 14px;
+               line-height: 27px;
+               color: #FFFFFF;
+               background: #1DBF73;
+               border-radius: 2px;
+            }
+
+            & > * {
+               &:first-child {
+                  height: 25px;
+                  font-family: 'RFDewi';
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 24px;
+                  color: #020F40;
+                  margin-left: 8px;
+                  vertical-align: bottom;
+               }
+
+               &:last-child {
+                  margin-left: -75px;
+                  font-family: 'Montserrat';
+                  font-size: 18px;
+                  line-height: 22px;
+                  color: #000000;
+                  margin-top: 16px;
+               }
+            }
+         }
+      }
    }
 
-   // .email-marketing-course-second__title
+   // .email-marketing-course-list__title
    &__title {
-      position: relative;
-      max-width: 475px;
-      width: 100%;
-
-      &::before {
-         content: "";
-         position: absolute;
-         top: 0;
-         left: 30%;
-         width: 208px;
-         height: 13px;
-         background: #ED9D7E;
-         border-radius: 41px;
-         z-index: -1;
+      &:not(:last-child) {
+         margin-bottom: 32px;
       }
 
       & > * {
          font-family: 'RFDewi';
          font-weight: 600;
-         font-size: 28px;
-         line-height: 34px;
+         font-size: 22px;
+         line-height: 26px;
          color: #020F40;
-      }
-   }
-
-   // .email-marketing-course-second__text
-   &__text {
-      max-width: 550px;
-      width: 100%;
-
-      & > * {
-         font-family: 'Montserrat';
-         font-size: 18px;
-         line-height: 25px;
-         color: #112211;
 
          & > * {
             font-weight: 800;
+
          }
       }
    }
