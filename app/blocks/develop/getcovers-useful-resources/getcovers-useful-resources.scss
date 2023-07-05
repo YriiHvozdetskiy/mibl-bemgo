@@ -1,0 +1,322 @@
+//font-family: 'RFDewi';
+//font-family: 'RFDewiExtended';
+//https://www.figma.com/file/rGMlyhC4x25obKcLaTXi8u/Getcovers_2.0?type=design&node-id=1569-2480&mode=design&t=DnpDcdTuLc2S64ga-0
+/* ============================ useful-resources START ================================================================= */
+.wrapper {
+   max-width: 1180px;
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+   padding: 0 30px;
+}
+
+.useful-resources-hero {
+   padding: 110px 0 150px;
+   background: url("img/sprite/useful-resources-bg.jpg") no-repeat center;
+   background-size: cover;
+
+   @media screen and (max-width: 666px) {
+      padding: 80px 0;
+   }
+   // .useful-resources-hero__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+
+      & > * {
+         color: #020D38;
+         text-align: center;
+         font-size: 40px;
+         font-family: RFDewiExtended;
+         font-weight: 700;
+         line-height: normal;
+         text-transform: capitalize;
+      }
+
+      & > * > * {
+         position: relative;
+         z-index: 1;
+         white-space: nowrap;
+
+         &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 18px;
+            background: #36C381;
+            border-radius: 41px;
+            position: absolute;
+            bottom: 7px;
+            left: 0;
+            z-index: -1;
+         }
+      }
+   }
+
+   // .useful-resources-hero__text
+   &__text {
+      text-align: center;
+
+      & > * {
+         color: #020D38;
+         font-size: 18px;
+         font-family: 'Montserrat';
+         font-weight: 300;
+         line-height: 25px;
+      }
+   }
+}
+
+.useful-resources-email {
+   &:nth-child(2) {
+      padding-top: 120px;
+
+      @media screen and (max-width: 666px) {
+         padding-top: 60px;
+      }
+   }
+
+   // .useful-resources-email__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 60px;
+      }
+
+      & > * {
+         color: #000;
+         font-size: 40px;
+         font-family: 'Montserrat';
+         font-weight: 700;
+         line-height: normal;
+         text-transform: uppercase;
+      }
+   }
+
+   // .useful-resources-email__list
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      //display: flex;
+      //flex-wrap: wrap;
+      gap: 76px;
+
+      @media screen and (max-width: 666px) {
+         gap: 30px;
+         grid-template-columns: repeat(1, 1fr);
+      }
+   }
+
+   // .useful-resources-email__item
+   &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      //width: calc(100% / 2 - 38px);
+
+      @media screen and (max-width: 666px) {
+         //width: calc(100% / 2 - 15px);
+      }
+
+      @media screen and (max-width: 428px) {
+         //width: 100%;
+      }
+   }
+
+   // .useful-resources-email__img
+   &__img {
+      display: block;
+
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+
+      & > * {
+         display: block;
+         width: 100%;
+         border-radius: 4px;
+         overflow: hidden;
+      }
+   }
+
+   // .useful-resources-email__title-item
+   &__title-item {
+      &:not(:last-child) {
+         margin-bottom: 8px;
+      }
+
+      & > * {
+         color: #000;
+         font-size: 22px;
+         font-family: 'Montserrat';
+         font-weight: 600;
+         line-height: normal;
+      }
+   }
+
+   // .useful-resources-email__text-item
+   &__text-item {
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+
+      & > * {
+         color: #808080;
+         font-size: 14px;
+         font-family: 'Montserrat';
+         font-weight: 400;
+         line-height: 20px;
+      }
+   }
+
+   &__link {
+      color: #fff;
+      border-radius: 6px;
+      padding: 14px 50px;
+      font-size: 16px;
+      background: #069451;
+      max-width: 170px;
+      text-align: center;
+      width: 100%;
+      margin-top: 16px;
+   }
+}
+
+.useful-resources-templates {
+
+   &:last-child {
+      padding-top: 120px;
+      padding-bottom: 120px;
+
+      @media screen and (max-width: 666px) {
+         padding-top: 60px;
+         padding-bottom: 60px;
+      }
+   }
+
+   // .useful-resources-templates__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 60px;
+      }
+
+      & > * {
+         color: #000;
+         font-size: 40px;
+         font-family: 'Montserrat';
+         font-weight: 700;
+         line-height: normal;
+         text-transform: uppercase;
+      }
+   }
+
+   // .useful-resources-templates__list
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px 30px;
+
+      @media screen and (max-width: 800px) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (max-width: 666px) {
+         grid-template-columns: repeat(1, 1fr);
+         gap: 30px;
+      }
+   }
+
+   // .useful-resources-templates__item
+   &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   // .useful-resources-templates__img
+   &__img {
+      display: block;
+
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+
+      & > * {
+         display: block;
+         width: 100%;
+         border-radius: 4px;
+         overflow: hidden;
+      }
+   }
+
+   // .useful-resources-templates__wrapper
+   &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 16px;
+   }
+
+   // .useful-resources-templates__text
+   &__text {
+      border-radius: 2px;
+      border: 1px solid #C4C4C4;
+      padding: 10px;
+      min-width: 134px;
+      text-align: center;
+
+      & > * {
+         color: #808080;
+         text-align: center;
+         font-size: 10px;
+         font-family: 'Montserrat';
+         font-weight: 400;
+         line-height: normal;
+         text-transform: uppercase;
+      }
+   }
+
+   // .useful-resources-templates__date
+   &__date {
+      & > * {
+         color: #808080;
+         font-size: 14px;
+         font-family: 'Montserrat';
+         font-weight: 400;
+         line-height: normal;
+      }
+   }
+
+   // .useful-resources-templates__title-item
+   &__title-item {
+
+      & > * {
+         color: #000;
+         font-size: 22px;
+         font-family: 'Montserrat';
+         font-weight: 600;
+         line-height: normal;
+      }
+   }
+
+   // .useful-resources-templates__link
+   &__link {
+      border-radius: 6px;
+      border: 1px solid #1dbf73;
+      max-width: 204px;
+      width: 100%;
+      padding: 14px 0;
+      text-decoration: none;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #1dbf73;
+      margin-top: 16px;
+   }
+}
+
+
+/* ============================ useful-resources END ================================================================= */
